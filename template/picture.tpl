@@ -401,6 +401,7 @@ jQuery().ready(function() {
 								<h4>{'Add a comment'|@translate}</h4>
 								<form  method="post" action="{$comment_add.F_ACTION}" class="filter" id="addComment" >
                   {if $comment_add.SHOW_AUTHOR}
+                    <p>{'Please register'|translate}</p>
                     <p><label for="author">{'Author'|@translate}{if $comment_add.AUTHOR_MANDATORY} ({'mandatory'|@translate}){/if} :</label></p>
                     <p><input type="text" name="author" id="author" value="{$comment_add.AUTHOR}"></p>
                   {/if}
