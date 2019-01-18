@@ -265,6 +265,10 @@ input, select, textarea { margin: 1px 0;}
   float:left;
 }
 
+.categoryActions .pwg-icon{
+	display:none;
+}
+
 .categoryActions li.mainAction {
 	float:right;
 }
