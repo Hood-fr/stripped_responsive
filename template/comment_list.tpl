@@ -36,6 +36,11 @@
 								[{'Delete'|@translate}]
 							</a>
 						{/if}
+						{if isset($comment.U_SUBMITSPAM)}
+							<a href="{$comment.U_SUBMITSPAM}" title="{'report spam'|@translate}" onclick="return confirm('{'Spam! Are you sure?'|@translate|@escape:javascript}');">
+								[{'report spam'|@translate}]
+							</a>
+						{/if}
 						{if isset($comment.U_EDIT) and !isset($comment.IN_EDIT)}
 							<a class="editComment" href="{$comment.U_EDIT}#edit_comment" title="{'edit this comment'|@translate}">
 								[{'edit'|@translate}]
