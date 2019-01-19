@@ -471,6 +471,43 @@ function displayZoomHigh()
               .css("top",Math.round((jQuery("#theImgHigh").prop("scrollHeight")-this.clientHeight) * -(mouseY-deadArea)/(this.clientHeight-2*deadArea))+"px");
           }
         );
+      jQuery('#theImgHighContainer').bind("touchstart",
+          function(event)
+          {
+
+            startX=parseInt(event.originalEvent.changedTouches[0].clientX);
+            startY=parseInt(event.originalEvent.changedTouches[0].clientY);
+            LeftOffset=jQuery("#theImgHigh").prop("offsetLeft");
+            TopOffset=jQuery("#theImgHigh").prop("offsetTop");
+        });
+
+          jQuery('#theImgHighContainer').bind("touchmove",
+          function(event)
+          {
+            if(startX>options.marginContainer && startX<p.width+options.marginContainer){
+               if(startY>options.marginContainer && startY<p.height+options.marginContainer){
+                   event.preventDefault();
+               }
+            }
+            touchX=parseInt(event.originalEvent.touches[0].clientX);
+            touchY=parseInt(event.originalEvent.touches[0].clientY);
+
+            offsetX=touchX-startX;
+            offsetY=touchY-startY;
+            maxLeftOffset = p.width-jQuery(document).data("highWidth");
+            maxTopOffset = p.height-jQuery(document).data("highHeight");
+            boundLeftOffset = Math.min(Math.max(maxLeftOffset, LeftOffset+offsetX), 0);
+            boundTopOffset = Math.min(Math.max(maxTopOffset, TopOffset+offsetY), 0);
+              /*touchX=Math.max(Math.min(event.originalEvent.touches[0].clientX-this.offsetLeft, this.clientWidth - deadArea), deadArea);
+            touchY=Math.max(Math.min(event.originalEvent.touches[0].clientY-this.offsetTop, this.clientHeight - deadArea), deadArea);
+            jQuery("#theImgHigh")
+              .css("left",Math.round((jQuery("#theImgHigh").prop("scrollWidth")-this.clientWidth) * -(touchX-deadArea)/(this.clientWidth-2*deadArea))+"px")
+              .css("top",Math.round((jQuery("#theImgHigh").prop("scrollHeight")-this.clientHeight) * -(touchY-deadArea)/(this.clientHeight-2*deadArea))+"px");*/
+            jQuery("#theImgHigh")
+              .css("left",boundLeftOffset+"px")
+              .css("top",boundTopOffset+"px");
+          }
+        );
     }
     else
     {
@@ -484,6 +521,9 @@ function displayZoomHigh()
           }
         );
       jQuery('#theImgHighContainer').unbind("mousemove");
+      jQuery('#theImgHighContainer').unbind("touchstart");
+      jQuery('#theImgHighContainer').unbind("touchend");
+      jQuery('#theImgHighContainer').unbind("touchmove");
     }
 }
 /**

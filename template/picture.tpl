@@ -127,7 +127,7 @@ jQuery().ready(function() {
 
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
 <div id="content">
-	<div class="hideTabsZone hideTabs">&nbsp;</div>
+	<!--<div class="hideTabsZone hideTabs">&nbsp;</div>-->
 
  <!-- Image HD --> 
   <div id="theImageHigh" style="display:none;">
