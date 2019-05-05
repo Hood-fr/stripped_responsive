@@ -818,7 +818,7 @@ ul.thumbnails,
 .img_nav {
 	position:absolute;
 	height:100%;
-    width:25%;
+        width:25%;
 	top:0;
 	display:block;
     /*z-index: 101;*/
@@ -872,8 +872,8 @@ ul.thumbnails,
 .cat_up {
 	position:absolute;
 	width:100%;
-	min-height:80px;
-	height:25%;
+	min-height:60px;
+	height:20%;
 	top:0;
 	left:0;
 	display:block;
