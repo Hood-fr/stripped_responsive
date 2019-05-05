@@ -51,7 +51,7 @@ function modify_nb_thumbnail_page()
 {
 	global $user, $page, $stripped_responsive;
 
-	if (!isset($stripped_responsive['maxThumb'])) { $stripped_responsive['maxThumb']=15;}
+	if (!isset($stripped_responsive['maxThumb'])) { $stripped_responsive['maxThumb']=50;}
 	$user['nb_image_page']=$stripped_responsive['maxThumb'];
 	$page['nb_image_page']=$stripped_responsive['maxThumb'];
 }

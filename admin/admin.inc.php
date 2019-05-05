@@ -44,7 +44,7 @@ if(isset($_POST['submit_stripped']))
 	$config['marginContainer']=30;
 	$config['paddingContainer']=10;
 	$config['highResClickMode']='zoom';
-	$config['maxThumb']=15;
+	$config['maxThumb']=50;
 
 	conf_update_param('stripped_responsive', pwg_db_real_escape_string(serialize($config)));
 
