@@ -1444,7 +1444,7 @@ form 				{ margin: 0;}
 }
 
 /* RV Maps & Earth Plugin ---------------------------------------------------------------------- */
-
+/**
 #theImageBox #map {
     left:240px;
 	margin-bottom:15px;
@@ -1454,7 +1454,7 @@ form 				{ margin: 0;}
 #theImageBox #mapPicture{
    width:230px;
    margin-left:10px;
-}
+}**/
 
 #theImage 						{ width: 100%;}
 #theMapListPage .titrePage h2	{ margin-left: 1em;}
