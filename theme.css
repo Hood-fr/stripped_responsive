@@ -1635,6 +1635,8 @@ table#TagsTable	{margin:auto;}
   padding-bottom:5px;
   margin-bottom:5px;
   border-bottom: 1px solid #444444;
+  width:95%;
+  max-width:375px;
 }
 
 .switchBox ul {
