@@ -95,6 +95,12 @@ body {
 	margin-bottom: 4px;
 }
 
+.banner  {
+	width: 100%;
+        max-width: 480px;
+        height: auto;
+}
+
 #content {
 	width:100%;
 	max-width:1140px;
