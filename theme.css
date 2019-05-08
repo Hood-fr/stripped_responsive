@@ -271,9 +271,9 @@ input, select, textarea { margin: 1px 0;}
   float:left;
 }
 
-.categoryActions .pwg-icon{
+/*.categoryActions .pwg-icon{
 	display:none;
-}
+}*/
 
 .categoryActions li.mainAction {
 	float:right;
@@ -1414,7 +1414,6 @@ form 				{ margin: 0;}
 }
 
 /* Language Switch Plugin ----------------------------------------------------------------------- */
-
 .categoryActions .menuf {
 	padding:0 0 0 2px;
 	float:right;

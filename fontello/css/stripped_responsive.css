@@ -32,7 +32,7 @@
   font-style: normal;
 }
  
- [class^="pwg-icon-"]:before, [class*=" pwg-icon-"]:before {
+ [class^="pwg-icon pwg-icon-"]:before {
   font-family: "stripped_responsive";
   font-style: normal;
   font-weight: normal;
