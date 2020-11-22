@@ -58,7 +58,11 @@
 			{if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
 			{if isset($comments)}
 				<div id="comments">
+				{if isset($COMMENT_LIST)}
+					{$COMMENT_LIST}
+				{else}
 					{include file='comment_list.tpl'}
+				{/if}
 				</div>
 			{/if}
 		</div>
