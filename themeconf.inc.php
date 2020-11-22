@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: stripped_responsive
-Version: 2.8.a
+Version: 2.10.a
 Description: Responsive stripped Theme
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=773
 Author: JanisV
@@ -51,7 +51,7 @@ function modify_nb_thumbnail_page()
 {
 	global $user, $page, $stripped_responsive;
 
-	if (!isset($stripped_responsive['maxThumb'])) { $stripped_responsive['maxThumb']=50;}
+	if (!isset($stripped_responsive['maxThumb'])) { $stripped_responsive['maxThumb']=15;}
 	$user['nb_image_page']=$stripped_responsive['maxThumb'];
 	$page['nb_image_page']=$stripped_responsive['maxThumb'];
 }
