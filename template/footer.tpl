@@ -47,7 +47,7 @@
 								contact us on http://piwigo.org to find a solution on how
 								to show the origin of the script...
 					*}
-					{'Powered by'|@translate}
+					{'Propelled by'|@translate}
 					<a href="{$PHPWG_URL}" class="Piwigo"><span class="Piwigo">Piwigo</span></a>
 					{$VERSION}
 
