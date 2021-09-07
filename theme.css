@@ -827,12 +827,12 @@ ul.thumbnails,
         width:25%;
 	top:0;
 	display:block;
-    /*z-index: 101;*/
+        /*z-index:101;*/
 }
 /*.img_prev 		{ width:40%; }
 .img_next 		{ width:60%; }*/
-.img_prev 		{ background:transparent url(icon/none.png) no-repeat left center;}
-.img_prev:hover 	{ background:transparent url(icon/img_prev.png) no-repeat left center;}
+.img_prev 		{ background:transparent url(icon/none.png) no-repeat left center; z-index:101;}
+.img_prev:hover 	{ background:transparent url(icon/img_prev.png) no-repeat left center; z-index:101;}
 .img_next 		{ background:transparent url(icon/none.png) no-repeat right center;}
 .img_next:hover 	{ background:transparent url(icon/img_next.png) no-repeat right center;}
 
