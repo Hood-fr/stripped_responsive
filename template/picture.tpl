@@ -57,7 +57,7 @@ jQuery().ready(function() {
 		{/if}{/strip}
 		{strip}{if isset($favorite) }
 			<li>
-        <a href="{$favorite.U_FAVORITE}" title="{$favorite.FAVORITE_HINT}">
+        <a href="{$favorite.U_FAVORITE}" title="{'Favorites'|@translate}">
           <span class="pwg-icon pwg-icon-heart"></span>
           <span class="pwg-button-text">{'Favorites'|@translate}</span>
         </a>
