@@ -14,8 +14,6 @@ var options = { {/literal}
 	paddingContainer:{$stripped_responsive.paddingContainer},
 	defaultZoomSize:"{$stripped_responsive.defaultZoomSize}",
 	highResClickMode:"{$stripped_responsive.highResClickMode}",
-{else}
-	animatedMenu:{if $stripped_responsive.animatedMenu}true{else}false{/if}
 {/if} 
 {literal}
 }
