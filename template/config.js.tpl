@@ -15,7 +15,7 @@ var options = { {/literal}
 	defaultZoomSize:"{$stripped_responsive.defaultZoomSize}",
 	highResClickMode:"{$stripped_responsive.highResClickMode}",
 {else}
-	animatedMenu:{if $stripped_responsive.animatedMenu}true{else}false{/if}
+	animatedMenu:{if isset($stripped_responsive.animatedMenu)}true{else}false{/if}
 {/if} 
 {literal}
 }

@@ -43,7 +43,7 @@ function theme_activate($id, $version, &$errors)
 	'marginContainer'				=> 30,
 	'paddingContainer'				=> 10,
 	'highResClickMode'				=> 'zoom',
-	'maxThumb'						=> 50,
+	'maxThumb'						=> 15,
       );
       
     $query = "
