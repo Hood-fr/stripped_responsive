@@ -68,7 +68,7 @@
 									<div class="calBackDate">{$day.DAY}</div><div class="calForeDate">{$day.DAY}</div>
 									<div class="calImg">
 										<a href="{$day.U_IMG_LINK}">
-											<img style="{$day.IMAGE_STYLE}" src="{$day.IMAGE}" alt="{$day.IMAGE_ALT}" title="{$day.NB_ELEMENTS|translate_dec:'%d photo':'%d photos'}">
+											<img style="{if isset($day.IMAGE_STYLE)}{$day.IMAGE_STYLE}{/if}" src="{$day.IMAGE}" src="{$day.IMAGE}" alt="{$day.IMAGE_ALT}" title="{$day.NB_ELEMENTS|translate_dec:'%d photo':'%d photos'}">
 										</a>
 									</div>
 							{else}

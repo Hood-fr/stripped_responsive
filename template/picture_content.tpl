@@ -45,12 +45,8 @@
     {if isset($previous)}
         <a href="{$previous.U_IMG}" class="img_nav img_prev" alt="{$previous.TITLE}"><span class="img_nav_content">&nbsp;</span></a>
     {/if}
-
 {/if}
 <div id="theImg" {if ($stripped_responsive.imageFrame)}class="img_frame"{/if}>
-        {if isset($U_UP)}
-            <a href="{$U_UP}" class="img_nav cat_up" alt="{'Show album'|@translate}"><span class="cat_up">&nbsp;</span></a>
-        {/if}
 	{if isset($displayHD)}
 		{if isset($pwghigh)}<a href="{$HD_url}" rel="shadowbox" class="hd_link">&nbsp;</a>{/if}
 		{if isset($winhigh)}<div onclick="openDisplayHigh('{$HD_url}');" class="hd_link">&nbsp;</div>{/if}

@@ -57,7 +57,7 @@ jQuery().ready(function() {
 		{/if}{/strip}
 		{strip}{if isset($favorite) }
 			<li>
-        <a href="{$favorite.U_FAVORITE}" title="{'Favorites'|@translate}">
+        <a href="{$favorite.U_FAVORITE}" title="{if $favorite.IS_FAVORITE}{'delete this photo from your favorites'|@translate}{else}{'add this photo to your favorites'|@translate}{/if}">
           <span class="pwg-icon pwg-icon-heart"></span>
           <span class="pwg-button-text">{'Favorites'|@translate}</span>
         </a>
@@ -156,7 +156,7 @@ jQuery().ready(function() {
 
 <div id="theImageAndTitle">
 	<div id="theImageBox" >
-		<!--<div class="hideTabsZone hideTabs">&nbsp;</div>-->
+		<div class="hideTabsZone hideTabs">&nbsp;</div>
 		<div id="theImage">
 			{$ELEMENT_CONTENT}
 		</div>
@@ -401,7 +401,6 @@ jQuery().ready(function() {
 								<h4>{'Add a comment'|@translate}</h4>
 								<form  method="post" action="{$comment_add.F_ACTION}" class="filter" id="addComment" >
                   {if $comment_add.SHOW_AUTHOR}
-                    <p>{'Please register'|translate}</p>
                     <p><label for="author">{'Author'|@translate}{if $comment_add.AUTHOR_MANDATORY} ({'mandatory'|@translate}){/if} :</label></p>
                     <p><input type="text" name="author" id="author" value="{$comment_add.AUTHOR}"></p>
                   {/if}

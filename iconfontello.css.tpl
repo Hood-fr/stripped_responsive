@@ -14,9 +14,9 @@ A:hover .pwg-icon:before{
   background: none !important;
 }
 @media (min-width: 798px) and (-webkit-max-device-pixel-ratio: 1.7), (min-width: 798px) and (max-resolution: 163.2dpi) {
-  {*.pwg-button-text{
+  .pwg-button-text{
 	display:inline;
-  }*}
+  }
   .pwg-icon {
     font-size: 18px;
   }
