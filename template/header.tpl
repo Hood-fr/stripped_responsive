@@ -75,7 +75,7 @@
 </div>
 {/if}
 
-<div id="theHeader">{$PAGE_BANNER}</div>
+<div id="theHeader">{$PAGE_BANNER|default:''}</div>
 {if isset($theSwiftHeader)}{$theSwiftHeader}{/if}
 {if not empty($header_notes)}
 <div class="header_notes">
