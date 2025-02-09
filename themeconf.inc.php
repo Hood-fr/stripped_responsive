@@ -1,9 +1,9 @@
 <?php
 /*
 Theme Name: stripped_responsive
-Version: 14.c
+Version: 15.a
 Description: Responsive stripped Theme
-Theme URI: http://piwigo.org/ext/extension_view.php?eid=773
+Theme URI: https://piwigo.org/ext/extension_view.php?eid=773
 Author: JanisV
 */
 
