@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: stripped_responsive
-Version: 15.a
+Version: 15.b
 Description: Responsive stripped Theme
 Theme URI: https://piwigo.org/ext/extension_view.php?eid=773
 Author: JanisV
