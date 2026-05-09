@@ -9,7 +9,7 @@ Author: JanisV
 
 global $conf, $user, $stripped_responsive;
 
-$stripped_responsive = array_merge( unserialize( $conf['stripped_responsive'] ), (array)$stripped_responsive );
+$stripped_responsive = array_merge( unserialize( $conf['stripped_responsive'] , ['allowed_classes' => false]), (array)$stripped_responsive );
 
 
 add_event_handler('init', 'set_config_values');
@@ -26,9 +26,9 @@ function set_config_values()
                           'stripped_responsive'=> $stripped_responsive
                          ));
 }
-	
+
 $themeconf = array(
-  'parent' => 'default', 
+  'parent' => 'default',
   'load_parent_css' => false,
   'load_parent_local_head' => false,
   'name' => 'stripped_responsive',
@@ -44,7 +44,7 @@ load_language('theme.lang', PHPWG_THEMES_PATH.'stripped_responsive/');
 
 pwg_set_session_var('show_metadata', true);
 
-// max number of thumbnails by page 
+// max number of thumbnails by page
 
 add_event_handler('loc_begin_index', 'modify_nb_thumbnail_page');
 function modify_nb_thumbnail_page()
@@ -106,7 +106,7 @@ function assign_next_images_url()
 	for ($n = 1; $n <= $nb_image; $n++) {
 		if (isset($picturenext[$n]['image_url'])) { $image_next[$n] = $picturenext[$n]['image_url']; }
 	}
-  
+
   $template->assign('U_IMGNEXT', $image_next );
 
 }

@@ -1,6 +1,6 @@
 <?php
 
-function theme_activate($id, $version, &$errors)
+function theme_activate($id, $version, &$errors=null)
 {
   global $prefixeTable, $conf;
 
